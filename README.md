@@ -73,6 +73,9 @@ LSTM for **_dayzzz_**
 #### [Quantum STAQ Project](https://pratt.duke.edu/about/news/duke-lead-15-million-program-create-first-practical-quantum-computer)
 For those of you who are consumed by software, [Fred Chong](https://people.cs.uchicago.edu/~ftchong/) is your guy.
 
+#### [Troubling Trends in Machine Learning Scholarship](https://arxiv.org/abs/1807.03341)
+Great read about problems in the ML research community.
+
 ### Papers to Read
 * https://arxiv.org/pdf/1802.04821.pdf Full paper on envolved policy gradients
 * https://arxiv.org/abs/1703.03400 Original meta-learning paper
