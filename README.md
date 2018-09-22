@@ -9,7 +9,7 @@ Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv
 
 They've pushed this idea further before with [evolved policy gradients](https://blog.openai.com/evolved-policy-gradients/), which prodbably deserves a section of it's own here. The idea being that loss functions are more general and share more similarities between differing tasks, so it'd be best to instead optimize over all environments on a new loss function rather than directly on the policy. The blog post explains this well, but the policy and loss model essentially a form of cooperative network. The policy uses the reward function to try and learn an enviroment as it normally would, it returns the reward it got, and then the reward function uses that value to do gradient descent on it's own parameters.
 
-And finally, this paper goes in another direction of meta-learning. Instead of having an ensemble of policies, they have an ensemble of models. The algorithm flow in the paper illustrates the process pretty well. First, they sample trajectories from the real enviroment. Then, using randomly sampled steps from their entire real-life history, they train *K* models that estimate the next state, given action *a* and current state *s*). These models are meant to represent *K* different possible MDPs of the true enviroment. Then, they gather simulated data from each of these possible MDPs. Each of these estimated MDPs has it's own policy model (in this paper they use TRPO). For each *K* models, they will sample the corresponding estimated MDP, update the model's parameters using gradient descent, and sample new simulated trajectories using this updated policy. Then, using this new simulated data and the algorithms from the first paper (called MAML), they update the meta-policy using an average of the gradient descent from each model. Finally, they run more trajectores in the real world using each *K* policy, rinse and repeat till it works well.
+And finally, this paper goes in another direction of meta-learning. Instead of having an ensemble of policies, they have an ensemble of models. The algorithm flow in the paper illustrates the process pretty well. First, they sample trajectories from the real enviroment. Then, using randomly sampled steps from their entire real-life history, they train *K* models that estimate the next state, given action *a* and current state *s*. These models are meant to represent *K* different possible MDPs of the true enviroment. Then, they gather simulated data from each of these possible MDPs. Each of these estimated MDPs has it's own policy model (in this paper they use TRPO). For each *K* models, they will sample the corresponding estimated MDP, update the model's parameters using gradient descent, and sample new simulated trajectories using this updated policy. Then, using this new simulated data and the algorithms from the first paper (called MAML), they update the meta-policy using gradient descent. Finally, they run more trajectores in the real world using each *K* policy, rinse and repeat till it works well.
 
 That's a lot of words, but the gist of it is that there's *K* models that form their own ideas about how the enviroment acts, and how to get the best reward given that model of the world. They get that idea by observing real data, and by running simulations on their own model to determine the best policy. The meta (or global, top-level, whatever-you-want-to-call-it) policy is then updated using even more simulated data from the possible models and policies.
 
@@ -24,7 +24,9 @@ Essentially just throw RL algorithms on top of eachother. The highest one runs a
 ## Recurrent Neural Networks
 
 ### [Learning Hierarchical Information Flow with Recurrent Neural Modules](https://arxiv.org/pdf/1706.05744.pdf)
+![Learning Hierarchical Information Flow with Recurrent Neural Modules](http://url/to/img.png)
 
+I think this picture from the paper is essentially all you need to get the gist of the idea. There's definitely more to the implementation of the model, but personally I didn't find that or the results particularly interesting. It's the concept of having a heirarchy or recurrent units that I found interesting, and they were inspired to try this out by the thalamus. I would love to see work around this on seeing if you can observe this type of compartementalization emerge training recurrent networks that don't force the constraint. Perhaps something around neural spiking, or using some form of other penalization than encourages heirarchy.
 
 ## Quantum Computing
 Currently in a superposition of empty and full.
@@ -36,13 +38,16 @@ Currently in a superposition of empty and full.
 #### [OpenAI Request for Research 2.0](https://blog.openai.com/requests-for-research-2/)
 Answer the call =)
 
+#### [David Silver's Introduction to Reinforcment Learning](https://youtu.be/2pWv7GOvuf0)
+This is what I watched to first learn about RL. Silver is a great teacher, highly recommend to get an overview of the basics of RL.
+
 #### Abbel's [NIPS 2017 Keynote](https://www.facebook.com/nipsfoundation/videos/1554594181298482/) and [updated slides](https://www.dropbox.com/s/uwq7eq8vtmiyr9k/2018_09_09%20--%20Columbia%20--%20Learning%20to%20Learn%20--%20Abbeel.pdf?dl=0)
 Abbeel and the other Berkeley folks are have done and continue to do impressive work! Check them out. Good insight into lots of state of the art stuff, even if it's perhaps a little biased.
 
 #### [Michael Nielsen's Quantum Computing Course](https://www.youtube.com/watch?v=X2q1PuI2RFI&list=PL1826E60FD05B44E4&index=1)
 Nielsen is mostly known for his very popular online book on neural networks, but he also has excellent material on understanding quantum computing!
 
-### [Rigetti Intro to Quantum Computing](https://pyquil.readthedocs.io/en/stable/intro.html)
+#### [Rigetti Intro to Quantum Computing](https://pyquil.readthedocs.io/en/stable/intro.html)
 Rigetti is a cool company, and they have solid intros to quantum computing and how to use their tools.
 
 #### [Berkeley's Deep Learning Class](http://rail.eecs.berkeley.edu/deeprlcourse/)
@@ -88,4 +93,4 @@ For those of you who are consumed by software, [Fred Chong](https://people.cs.uc
 * https://arxiv.org/pdf/1611.01838.pdf Entropy SGD
 
 ### Ramblings
-* I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
+* I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, distance / physical based constraints, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
