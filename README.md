@@ -16,7 +16,7 @@ That's a lot of words, but the gist of it is that there's *K* models that form t
 There's been work done before like this on combining model-based RL and model-free RL to improve performance (I can't find the link after a quick search but David Silver talks about it in his lectures). It seems that this is essentially just applying the meta-paradime to it. Though this paper also seems to assume you know the reward function, though in theory you could just add that to the estimated MDP to learn from the real data.
 
 ### [Evolution Strategies as a Scalable Alternative to Reinforcement Learning](https://blog.openai.com/evolution-strategies/)
-Essentially just trying out a bunch of slightly different policies, choose the best one, rinse and repeat. And this can be faster just because when you're working with a hidden loss like reward, sometimes it's just faster to try it out than computing the gradient. I can see this being a problem with enviroments that involve a lot of other agents or it takes a very long time to play out. Though I only looked at the blog, not the paper and code, so they may have addressed concerns like these more directly there.
+Essentially just trying out a bunch of slightly different policies by slightly changing the parameters, choose the best one, rinse and repeat. And this can be faster just because when you're working with a hidden loss like reward, sometimes it's just faster to try it out than computing the gradient. I can see this being a problem with enviroments that involve a lot of other agents or it takes a very long time to play out. Though I only looked at the blog, not the paper and code, so they may have addressed concerns like these more directly there. I could also see this being incrementally improved by doing something like baising the sampling of new parameters in the direction of the previous gradients, to make the sampling a little smarter.
 
 ### [Meta Learning Shared Hierarchies](https://blog.openai.com/learning-a-hierarchy/)
 Essentially just throw RL algorithms on top of eachother. The highest one runs at a longer timestep. It chooses which lower level algorithm to use, and then it's "reward" is just the sum of whatever the lower level model achieved in that time. Pretty cool, at least in the examples they gave seemed to learn good seperations of tasks. I'd like to see someone find counterexamples, or to generaize the system of layers. Essentially "how deep do you go?".
@@ -49,6 +49,9 @@ Nielsen is mostly known for his very popular online book on neural networks, but
 
 #### [Rigetti Intro to Quantum Computing](https://pyquil.readthedocs.io/en/stable/intro.html)
 Rigetti is a cool company, and they have solid intros to quantum computing and how to use their tools.
+
+#### [WildML](http://www.wildml.com/author/dennybritz/)
+Denny Britz is a pretty cool guy, and I like his posts. Honstly I don't look at it too much, but there was a recent post about using [RL in stock trading](http://www.wildml.com/2018/02/introduction-to-learning-to-trade-with-reinforcement-learning/) that caught my eye. He brought up a good point about a need for exploration methods as we look at enviroments with an extremely small percent of good moves. Perhaps research in causality will help that out.
 
 #### [Berkeley's Deep Learning Class](http://rail.eecs.berkeley.edu/deeprlcourse/)
 I haven't actually followed along on this course, but the material looks good, and it's been taught by Abbeel and Levine. I'd like to work through it soon.
