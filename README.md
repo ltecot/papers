@@ -24,7 +24,7 @@ Essentially just throw RL algorithms on top of eachother. The highest one runs a
 ## Recurrent Neural Networks
 
 ### [Learning Hierarchical Information Flow with Recurrent Neural Modules](https://arxiv.org/pdf/1706.05744.pdf)
-![Learning Hierarchical Information Flow with Recurrent Neural Modules](http://url/to/img.png)
+![](https://github.com/ltecot/papers/blob/master/ThalNet_diagram.png)
 
 I think this picture from the paper is essentially all you need to get the gist of the idea. There's definitely more to the implementation of the model, but personally I didn't find that or the results particularly interesting. It's the concept of having a heirarchy or recurrent units that I found interesting, and they were inspired to try this out by the thalamus. I would love to see work around this on seeing if you can observe this type of compartementalization emerge training recurrent networks that don't force the constraint. Perhaps something around neural spiking, or using some form of other penalization than encourages heirarchy.
 
