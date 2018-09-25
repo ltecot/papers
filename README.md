@@ -104,6 +104,11 @@ Great read about problems in the ML research community.
 * https://arxiv.org/pdf/1805.11593.pdf RL paper from google to get good performance over all atari games.
 * https://arxiv.org/abs/1410.5401 Neural Turing Machine
 * https://arxiv.org/abs/1806.09729 Quantum backprop. Gotta get in all those buzzwords.
+* http://www1.icsi.berkeley.edu/~shastri/psfiles/nc2000.pdf Hebbian + causal link dump
+* https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006227 Hebbian + causal link dump
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4006178/ Hebbian + causal link dump
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4563904/ Hebbian + causal link dump
 
 ### Ramblings
 * I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, distance / physical based constraints, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
+  * Still haven't read a ton but the gist of it seems is people generally tried this stuff but it didn't quite work. Especially not nearly as well as currently popular methods. Though I don't see many recent papers on it, so might be interesting to mess around with it with more compute power, or just adapt some of the ideas given less attention into current state of the art concepts.
