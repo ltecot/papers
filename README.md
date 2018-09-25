@@ -103,6 +103,7 @@ Great read about problems in the ML research community.
 * https://arxiv.org/pdf/1710.02298.pdf Rainbow. I think just an ensemble of a bunch of DQN stuff?
 * https://arxiv.org/pdf/1805.11593.pdf RL paper from google to get good performance over all atari games.
 * https://arxiv.org/abs/1410.5401 Neural Turing Machine
+* https://arxiv.org/abs/1806.09729 Quantum backprop. Gotta get in all those buzzwords.
 
 ### Ramblings
 * I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, distance / physical based constraints, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
