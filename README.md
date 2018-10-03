@@ -28,6 +28,9 @@ Essentially just throw RL algorithms on top of eachother. The highest one runs a
 
 I think this picture from the paper is essentially all you need to get the gist of the idea. There's definitely more to the implementation of the model, but personally I didn't find that or the results particularly interesting. It's the concept of having a heirarchy or recurrent units that I found interesting, and they were inspired to try this out by the thalamus. I would love to see work around this on seeing if you can observe this type of compartementalization emerge training recurrent networks that don't force the constraint. Perhaps something around neural spiking, or using some form of other penalization than encourages heirarchy.
 
+### [Capacity and Trainability in Recurrent Neural Networks](https://arxiv.org/pdf/1611.09913.pdf)
+Overview of a bunch of different RNN architectures. They do a variety of analysis with hyperparameters, number of parameters, number of units, etc. Most of the analysis centers around the network's ability to reproduce binary input it saw in the past, and they use that get the bits per parameter measure of the network. They essentially found that most networks get 3-6 bits per parameter, though strictly speaking this measure might not be particularly useful because the LSTM and GRU networks that had worse memory per parameter train better on more practical tasks. And a little interesting tidbit I liked is they say bioligcal synapses were calulated to have similar capacity, 4.7 bits. Although the this paper is more focused around analysing RNN architectures for choosing and training current models, I'd be interested in seeing similar analysis in RNN's ability to encode concepts, causal relations, etc.
+
 ## Quantum Computing
 Currently in a superposition of empty and full.
 
