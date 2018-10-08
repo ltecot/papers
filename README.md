@@ -120,6 +120,8 @@ Great read about problems in the ML research community.
 * https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4563904/ Hebbian + causal link dump
 * https://www.vicarious.com/wp-content/uploads/2018/01/AAAI18-pixelworld.pdf Vicarious AAAI. Seems interesting
 * https://arxiv.org/pdf/1712.09913.pdf Cool paper on visualizing loss landscapes
+* https://arxiv.org/pdf/1803.10760.pdf Memory paper Mark suggested
+* https://arxiv.org/pdf/1603.01121.pdf Imperfect information self play. About modeling minds and nash eq.
 
 ### Ramblings
 * I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, distance / physical based constraints, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
