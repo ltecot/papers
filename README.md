@@ -21,6 +21,9 @@ Essentially just trying out a bunch of slightly different policies by slightly c
 ### [Meta Learning Shared Hierarchies](https://blog.openai.com/learning-a-hierarchy/)
 Essentially just throw RL algorithms on top of eachother. The highest one runs at a longer timestep. It chooses which lower level algorithm to use, and then it's "reward" is just the sum of whatever the lower level model achieved in that time. Pretty cool, at least in the examples they gave seemed to learn good seperations of tasks. I'd like to see someone find counterexamples, or to generaize the system of layers. Essentially "how deep do you go?".
 
+### [Reinforcement Learning of Physical Skills from Videos](https://arxiv.org/pdf/1810.03599.pdf)
+Really cool paper on learning different skills, such as flips, kicks, dances, etc. from video. They essentially built a system to extract a nice 3D model of the action in the video, and then they ran a RL algorithm that got reward based on how closely it could match that model over time. And they were able to train + augment it to work with varying interferences in the environment, plus with different body types. I'd love to see essentially just pushing this further. Maybe see if you can fit it to extremely different body types (spider-type, dog-type). Or just cool stuff, like throwing the trained models into a video game and allow someone to give high-level controls and have the agent follow them in a physically simulated way.
+
 ## Recurrent Neural Networks
 
 ### [Learning Hierarchical Information Flow with Recurrent Neural Modules](https://arxiv.org/pdf/1706.05744.pdf)
@@ -122,6 +125,10 @@ Great read about problems in the ML research community.
 * https://arxiv.org/pdf/1712.09913.pdf Cool paper on visualizing loss landscapes
 * https://arxiv.org/pdf/1803.10760.pdf Memory paper Mark suggested
 * https://arxiv.org/pdf/1603.01121.pdf Imperfect information self play. About modeling minds and nash eq.
+* https://www.cell.com/neuron/fulltext/S0896-6273(18)30543-9 neuroscience + RNNs dynamics
+* https://www.nature.com/articles/nn.3405 neuroscience + RNNs dynamics
+* https://www.biorxiv.org/content/early/2017/09/01/183632 neuroscience + RNNs dynamics
+* https://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00409?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed neuroscience + RNNs dynamics
 
 ### Ramblings
 * I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, distance / physical based constraints, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
