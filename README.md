@@ -41,6 +41,12 @@ Overview of a bunch of different RNN architectures. They do a variety of analysi
 
 An iterative process of training neural networks (this this case, a CNN). The picture above from their paper is pretty illustraive of how it works. They essentially train one layer at the time. I didn't read very deeply into their theorems and details, but the general theme seems to be that this allows them to have the nice training properties of single layer neural networks, because they can treat the previous layer just as a regular input. And this allows them to get pretty good results with a smaller network. This also continues my interest on seeing if there can be some form of general network, where neurons and their architecture aren't constrained and are learned / altered through time. And also if they can be trained to represent useful concepts locally, in order to account for a vastly changing goal.
 
+## Logic, Relational Learning, and Causal Inference
+
+### [A Semantic Loss Function for Deep Learning Under Weak Supervision](https://web.cs.ucla.edu/~guyvdb/papers/XuLLD17.pdf)
+
+Essentially they constrained a NN to also include loss from breaking logical sentences, presumably that decribe the rules of the task in a logical way (I didn't read too deep). Good really straightforward example of why this type of reasoning is important to try to include in modern methods. They didn't neccisarily see better results, but they were able to achieve optimal solutions faster and with less data.
+
 ## Quantum Computing
 Currently in a superposition of empty and full.
 
