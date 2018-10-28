@@ -135,6 +135,7 @@ Great read about problems in the ML research community.
 * https://www.nature.com/articles/nn.3405 neuroscience + RNNs dynamics
 * https://www.biorxiv.org/content/early/2017/09/01/183632 neuroscience + RNNs dynamics
 * https://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00409?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed neuroscience + RNNs dynamics
+* https://blog.openai.com/amplifying-ai-training/ Seems to be a form of imitation learning via breaking into smaller known tasks, and building an ensemble of known tasks by making the new one part of ensemble.
 
 ### Ramblings
 * I'm particularly interested in parallels between recurrent networks and how our brain works. Specifically exploring more around Hebbian learning, neural spiking, plasticity in spike timing, long term potentiation / depression, distance / physical based constraints, and sleep regularization. But there's probably a lot of literature around all these ideas I haven't seen yet, especially given that everyone tries stuff from neuroscience, so I need to read up a lot.
