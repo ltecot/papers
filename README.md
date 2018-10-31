@@ -24,6 +24,12 @@ Essentially just throw RL algorithms on top of eachother. The highest one runs a
 ### [Reinforcement Learning of Physical Skills from Videos](https://arxiv.org/pdf/1810.03599.pdf)
 Really cool paper on learning different skills, such as flips, kicks, dances, etc. from video. They essentially built a system to extract a nice 3D model of the action in the video, and then they ran a RL algorithm that got reward based on how closely it could match that model over time. And they were able to train + augment it to work with varying interferences in the environment, plus with different body types. I'd love to see essentially just pushing this further. Maybe see if you can fit it to extremely different body types (spider-type, dog-type). Or just cool stuff, like throwing the trained models into a video game and allow someone to give high-level controls and have the agent follow them in a physically simulated way.
 
+### [QT-Opt: Scalable Deep Reinforcement Learning for Vision-Based Robotic Manipulation](https://arxiv.org/pdf/1806.10293.pdf)
+
+Best paper winner at CoRL. The TLDR is they got really good at picking things up with robot arms. It's important work to push the boundaries and build practical systems out of what works. But on the RL side, I think the algorithm they use is of the most interest. It's a Q-learning algorithm, which typically I haven't seen in recent publications in favor of actor-critic methods.
+
+It's actually pretty simple. They are in a sense still doing actor-critic. Except instead of value estimator, they are using a Q-value estimator, and instead of an actor NN, they are just fitting a gaussian using cross-entropy to estimate the action that produces the highest value from the Q-values given a state. It's the same pipeline, except they're removing a lot of the weirdness of optimizing a gradient on top of another changing network. At least in theory, from a thought-expiriment and empirical point of view. This is pretty cool, I think I'll try this out on some atari games and see if it translates nicely.
+
 ## Recurrent Neural Networks
 
 ### [Learning Hierarchical Information Flow with Recurrent Neural Modules](https://arxiv.org/pdf/1706.05744.pdf)
