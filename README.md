@@ -67,6 +67,12 @@ They mention papers like [MAML](https://arxiv.org/abs/1703.03400) and [SNAIL](ht
 
 Though I will say that I'm not totally sold on their hebbian learning equation. In the context of memory I can certaintly see how it would be useful, because it encodes patterns that have been seen before by increasing the probability of neurons "firing" if they have fired together before in the past. But in the context of learning, it's essentially just a complex term to increase the expressibility of the model. There's a lot in the area this type of learning dealing with hebbian local plasticity updates (change in update direction based on post and pre synaptic firings, dynamic weights within the hebbain learning model, constraints for computational efficiency) that would be nice to explore here. Also, I'm not really a fan of how they don't really give any theoretical justification for their method, and they kinda waive around claims. But that's more of a research-level nitpick from me. I'm certaintly a fan of having both a healthy dose of the theoretical and empirical, so hopefully the community as a whole around these concepts builds on this.
 
+###[Differentiable neural computers](https://deepmind.com/blog/differentiable-neural-computers/)
+
+I only skimmed the blog, (and in ML community standards this paper is a little old) but I wanted to write a quick thing about this because I really like it. I'd expect there's also a lot of new stuff out there around this paper that I should read.
+
+The TLDR here is essentially you make a policy that decides operations to take given a set of operations as actions and a set of memory it has access to to write and read. I like thinking about different rules of operation and optimization for neural networks that provide better memory and modeling of the environment, but I think the idea of giving it access to a memory bank is a cool idea. It sort of implicitly gives the model a lot of memory to work with. And you can fit this model into typical reinforcment learning setups. I'm not sure with what this has been proven to work with yet, but I'd like to expiriment with this more.
+
 ## Logic, Relational Learning, and Causal Inference
 
 ### [A Semantic Loss Function for Deep Learning Under Weak Supervision](https://web.cs.ucla.edu/~guyvdb/papers/XuLLD17.pdf)
