@@ -30,6 +30,12 @@ Best paper winner at CoRL. The TLDR is they got really good at picking things up
 
 It's actually pretty simple. They are in a sense still doing actor-critic. Except instead of value estimator, they are using a Q-value estimator, and instead of an actor NN, they are just fitting a gaussian using cross-entropy to estimate the action that produces the highest value from the Q-values given a state. It's the same pipeline, except they're removing a lot of the weirdness of optimizing a gradient on top of another changing network. At least in theory, from a thought-expiriment and empirical point of view. This is pretty cool, I think I'll try this out on some atari games and see if it translates nicely.
 
+### [Reinforcement Learning with Prediction-Based Rewards](https://blog.openai.com/reinforcement-learning-with-prediction-based-rewards/)
+
+This blog post is essentially the combined work of two papers: [Large-Scale Study of Curiosity-Driven Learning](https://arxiv.org/pdf/1808.04355.pdf) and the work built on it by [Exploration by Random Network Distillation](https://arxiv.org/pdf/1810.12894.pdf). The general crux of it is that if the agent can accurately predict what will happen, it will avoid those scenarios in favor of states that it doesn't know. This is formalized by adding the difference between observed and predicted states as a reward.
+
+I like this a lot, because it's driving towards the idea of learning in general rather than learning for a reward. It'd be cool to see this work continued in the context of curiosity guided by reward (maybe multiply estimated values with error of prediction values for reward?).
+
 ## Recurrent Neural Networks
 
 ### [Learning Hierarchical Information Flow with Recurrent Neural Modules](https://arxiv.org/pdf/1706.05744.pdf)
