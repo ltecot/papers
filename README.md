@@ -1,6 +1,13 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [Supervising strong learners by amplifying weak experts](https://arxiv.org/abs/1810.08575)
+![](https://github.com/ltecot/papers/blob/master/amplify.png)
+
+This paper essentially suggests a way to interatively improve on a learner through human help. The diagram above from the paper does a pretty good job of summing up what's going on. Basically you have a human or some teacher give answers to a question, and it can ask the learner smaller sub-questions that it might need to solve the question. The algorithm then learns to imitate the teacher for that question, and it then throws the ability to answer that question into X. They talk about desirable qualities related to avoiding reward functions that could cause the learner to do very catastrophic things (doomsday AI stuff), and also better efficiency through reusing previously learned stuff structurally and whatnot.
+
+I didn't read too much into the specific implementation details, but this kind of concept is something I've been seeing around that I like. There's sort of an implicit heirarchy here. We learn how to do a bunch of things, and then we can learn to do more things by decomposing a new things into things we know. And it's an evolving structure as we encounter new tasks, so the heirarchy is not fixed. Incorperating this type of evolution into a learner that doesn't need to take in human examples would be neat to see, like some form of fluid heirarchy in an RL algorithm. Thought I'm sure theres a paper out there that trys to do this.
+
 ### [A Universal Training Algorithm for Quantum Deep Learning](https://arxiv.org/pdf/1806.09729.pdf)
 ![](https://github.com/ltecot/papers/blob/master/phase_kick.png)
 
