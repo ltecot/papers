@@ -3,9 +3,7 @@ Notes and summaries of papers for myself. Not meant to be extremely accurate or 
 
 ### [Equilibrium Propagation: Bridging the Gap Between Energy-Based Models and Backpropagation](https://arxiv.org/abs/1602.05179)
 
-This paper is the semi-culmination of the algorithmic work done at MILA with Bengio on local plasticity, hebbian learning, whatever you want to call it. There's a few follow up papers ([here](https://arxiv.org/abs/1711.08416) and [here](https://arxiv.org/abs/1808.04873)) that talk about and prove properties of this algorithm. Though for the most part it's pretty similar to the contrastive hebbian learning paper, except that the outputs aren't fully clamped to the desired output.
-
-(To be continued, have to read more deeply)
+This paper is the semi-culmination of the algorithmic work done at MILA with Bengio on local plasticity, hebbian learning, whatever you want to call it. There's a few follow up papers ([here](https://arxiv.org/abs/1711.08416) and [here](https://arxiv.org/abs/1808.04873)) that talk about and prove properties of this algorithm. Though for the most part it's pretty similar to the contrastive hebbian learning paper, except that the outputs aren't fully clamped to the desired output. The majority of this paper just goes deep into the theory, implementation, how it differs and is similar to previous work, details of how to get it to work and hypothesis for future findings, etc. Solid read if this is an interesting method to you.
 
 Personally I'm interested in making this architecture and optimization inherently tied to reinforcment learning. I believe the idea behind the two stages of the training process are to increase the energy of undesirable states, and reduce the energy of desired states. So when we get an input and run the network to minimize the energy, it'll converge to the desired outputs. But on an intuitive level it seems to be pretty easy to formulate it in the context of reward, because you could just decrease the energy for high reward and increase it for low reward. (Lots of practical and theoretical problems to address for this but it's an idea I'd like to explore.)
 
