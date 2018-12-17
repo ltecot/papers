@@ -1,6 +1,10 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst](https://medium.com/@mayban/a6668993bd8)
+
+Implementation details on Waymo's machine learning pipeline for car control. I only skimmed, but seems interesting. Always a fan of companies, especially ones at the scale of Waymo, publishing how they do their work. Though it did make me think about simulated examples. It'd be interesting to see some form of GAN for this, where scenarios are generated with the intent of trying to make the system fail.
+
 ### [Equilibrium Propagation: Bridging the Gap Between Energy-Based Models and Backpropagation](https://arxiv.org/abs/1602.05179)
 
 This paper is the semi-culmination of the algorithmic work done at MILA with Bengio on local plasticity, hebbian learning, whatever you want to call it. There's a few follow up papers ([here](https://arxiv.org/abs/1711.08416) and [here](https://arxiv.org/abs/1808.04873)) that talk about and prove properties of this algorithm. Though for the most part it's pretty similar to the contrastive hebbian learning paper, except that the outputs aren't fully clamped to the desired output. The majority of this paper just goes deep into the theory, implementation, how it differs and is similar to previous work, details of how to get it to work and hypothesis for future findings, etc. Solid read if this is an interesting method to you.
