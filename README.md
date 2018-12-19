@@ -1,6 +1,10 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [Go-Explore](https://eng.uber.com/go-explore/)
+
+Post from Uber research that claims massively improving Montezuma’s Revenge and Pitfall scores. They still have yet to release the paper though. The general idea is you remember states you haven't explored, return to them, and keep exploring. Basically this is meant to ensure the algorithm doesn't give up on going down a path it previously tried. The results are flashy, and it's definitely a nice intuition I've seen reflected in other papers too. Though there are issues here with practicality, namely in that the results assume determinsitic environments for the most part. A good discussion of pitfalls is discussed [here](https://www.alexirpan.com/2018/11/27/go-explore.html?fbclid=IwAR315UVwD1503QMba-7Y3BoLulWlxCxR6zHEclLrXk5FuinEblF_4R5CReQ).
+
 ### [ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst](https://medium.com/@mayban/a6668993bd8)
 
 Implementation details on Waymo's machine learning pipeline for car control. I only skimmed, but seems interesting. Always a fan of companies, especially ones at the scale of Waymo, publishing how they do their work. Though it did make me think about simulated examples. It'd be interesting to see some form of GAN for this, where scenarios are generated with the intent of trying to make the system fail.
