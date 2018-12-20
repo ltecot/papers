@@ -1,10 +1,17 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
-### [
-Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/abs/1811.04551)
+### [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948)
 
-About improving the ability to learn environment dynamics. In my opinion this paper is a little dense and jargony, but there's a nice summary that helped me understand [here](http://www.shortscience.org/paper?bibtexKey=journals/corr/1811.04551#wassname). To basically restate what they said, the main things they do here are train on embedded features (not neccisarily straight on the pixels), use both deterministic and probablistic information in a recurrent model, and train to look many steps ahead. This probably also deserves a closer look at a later time.
+Paper from Nvidia that produces extremely lifelike generations of human faces. I need to read this in detail but I wanted to place this here because the results are super neat.
+
+(TODO: Return to this paper.)
+
+### [Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/abs/1811.04551)
+
+About improving the ability to learn environment dynamics. In my opinion this paper is a little dense and jargony, but there's a nice summary that helped me understand [here](http://www.shortscience.org/paper?bibtexKey=journals/corr/1811.04551#wassname). To basically restate what they said, the main things they do here are train on embedded features (not neccisarily straight on the pixels), use both deterministic and probablistic information in a recurrent model, and train to look many steps ahead. If you look at the functions provided in Equation 1, this makes more sense. Essentially they have a variety of models they train, and then as demonstrated in Algorithm 2, they sample action trajectories and re-fit their models to the best of these trajectories.
+
+This probably also deserves a closer look at a later time.
 
 ### [Neural Ordinary Differential Equations](https://arxiv.org/abs/1806.07366)
 
