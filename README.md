@@ -1,6 +1,11 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [
+Learning Latent Dynamics for Planning from Pixels](https://arxiv.org/abs/1811.04551)
+
+About improving the ability to learn environment dynamics. In my opinion this paper is a little dense and jargony, but there's a nice summary that helped me understand [here](http://www.shortscience.org/paper?bibtexKey=journals/corr/1811.04551#wassname). To basically restate what they said, the main things they do here are train on embedded features (not neccisarily straight on the pixels), use both deterministic and probablistic information in a recurrent model, and train to look many steps ahead. This probably also deserves a closer look at a later time.
+
 ### [Neural Ordinary Differential Equations](https://arxiv.org/abs/1806.07366)
 
 Interesting paper that won best paper at NeurIPS 2018. To be honest I lack the knowledge to understand a lot of this, so I'll have to come back and give it a better read when I have more time. Until then I can't give any sort of informed opinion on it.
