@@ -1,6 +1,10 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565)
+
+Survey on different aspects and approaches to AI safety. Good read for an overview and some ideas.
+
 ### [A Style-Based Generator Architecture for Generative Adversarial Networks](https://arxiv.org/abs/1812.04948)
 
 Paper from Nvidia that produces extremely lifelike generations of human faces. I need to read this in detail but I wanted to place this here because the results are super neat.
