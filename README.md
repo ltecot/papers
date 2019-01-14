@@ -1,6 +1,10 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [Unsupervised Learning via Meta-Learning](https://openreview.net/pdf?id=r1My6sR9tX)
+
+Paper in review on meta-learning for unsupervised learning. Take my summary of this with a grain of salt because I skimmed pretty heavily. But, it seems that they take embeddings of inputs, cluster these embeddings to automatically create supervised tasks, and then run a meta-learning algorithm on this process a bunch of times (figure 1 illustrates this pretty clearly). Seems to be a pretty standard furthering of messing around with meta-learning, which I'm a fan of. Though personally I think I'd be more interested in the embedding function. Though I'm not too familiar with the literature space, so I'll have to read more into the stuff they used in this specific paper. But I am a fan of the idea that generalized learning is about learning how to strucutre your data such that it becomes easy to perform tasks that give high reward.
+
 ### [Concrete Problems in AI Safety](https://arxiv.org/abs/1606.06565)
 
 Survey on different aspects and approaches to AI safety. Good read for an overview and some ideas.
