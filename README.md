@@ -143,6 +143,12 @@ Answer the call =)
 #### [David Silver's Introduction to Reinforcment Learning](https://youtu.be/2pWv7GOvuf0)
 This is what I watched to first learn about RL. Silver is a great teacher, highly recommend to get an overview of the basics of RL.
 
+#### [Stanford CS231n](http://cs231n.stanford.edu/index.html)
+I'm doing the UCLA version of this class and it's very good. (To my understanding the homework assignments are pretty much the same.) I only really vaguely understood how backprop and such worked under the hood, but this class really gets you comfortable with how the whole system works.
+
+#### [Fast.ai](https://www.fast.ai/)
+I haven't done their material personally but I want to get around to it. Seems highly recommended by most people in the field.
+
 #### Abbel's [NIPS 2017 Keynote](https://www.facebook.com/nipsfoundation/videos/1554594181298482/) and [updated slides](https://www.dropbox.com/s/uwq7eq8vtmiyr9k/2018_09_09%20--%20Columbia%20--%20Learning%20to%20Learn%20--%20Abbeel.pdf?dl=0)
 Abbeel and the other Berkeley folks are have done and continue to do impressive work! Check them out. Good insight into lots of state of the art stuff, even if it's perhaps a little biased.
 
@@ -157,9 +163,6 @@ Denny Britz is a pretty cool guy, and I like his posts. Honstly I don't look at 
 
 #### [Berkeley's Deep Learning Class](http://rail.eecs.berkeley.edu/deeprlcourse/)
 I haven't actually followed along on this course, but the material looks good, and it's been taught by Abbeel and Levine. I'd like to work through it soon.
-
-#### [Stanford CS231n](http://cs231n.stanford.edu/index.html)
-Haven't done this totally as well, but also seems good. And recommended by a lot of people.
 
 #### [Andrej Karpathy Blog](http://karpathy.github.io/)
 In the spirit of continuing to jump on that hype train, Karpathy also has a lot of good writeups. I specifically enjoyed his recurrent neural network one.
@@ -179,42 +182,5 @@ For those of you who are consumed by software, [Fred Chong](https://people.cs.uc
 Great read about problems in the ML research community.
 
 ### Papers to Read
-* https://arxiv.org/pdf/1802.04821.pdf Full paper on envolved policy gradients
-* https://arxiv.org/abs/1703.03400 Original meta-learning paper
-* https://arxiv.org/pdf/1709.02023.pdf
-* https://arxiv.org/pdf/1807.09341.pdf
-* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3792559/
-* https://arxiv.org/pdf/1808.07804.pdf Claims to use some ideas from causal literature, might be good to look at. About transfer learning
-* https://arxiv.org/pdf/1707.03141.pdf SNAIL paper. Continuation of work that uses LSTMs to implement policy gradients.
-* https://arxiv.org/pdf/1802.01557.pdf One-shot learning from human example. Sounds impressive.
-* https://arxiv.org/pdf/1802.06070.pdf Title caught my eye. Sounds like might have insights to Hebbian learning
-* https://arxiv.org/pdf/1710.11622.pdf Looks like potentially a cool proof
-* https://arxiv.org/abs/1707.01495 Hindsight experience replay. I think I already kinda get how they did this, and I feel like it's only applicable to a specific set of tasks, but still good to read.
-* https://arxiv.org/abs/1709.04326 Opponent awareness. This ties into a lot of work about forgetting nash equlibriums and how we can gain value by modeling how we think other people think plus learn.
-* https://arxiv.org/abs/1707.00183 Teacher-student. Same as above, idea of modeling agents you interact with.
-* https://arxiv.org/pdf/1808.00177.pdf OpenAI dexterity paper
-* https://arxiv.org/pdf/1806.07811.pdf Quanquan Gu's paper on a new SGD with reduced variance. NIPS 2018
-* https://arxiv.org/pdf/1802.09025.pdf Learning quantum states, AKA minizing number of quantum trails. NIPS 2018
-* https://arxiv.org/pdf/1711.02301.pdf Irpan
-* https://arxiv.org/pdf/1806.10293.pdf Irpan
-* https://arxiv.org/pdf/1709.07857.pdf Irpan
-* https://arxiv.org/pdf/1611.01838.pdf Entropy SGD
-* https://blog.openai.com/glow/ generative models, looks trippy
-* https://blog.openai.com/reptile/ OpenAI's system for training meta models.
-* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3792559/ Neural spiking stuff
-* https://arxiv.org/pdf/1710.02298.pdf Rainbow. I think just an ensemble of a bunch of DQN stuff?
-* https://arxiv.org/pdf/1805.11593.pdf RL paper from google to get good performance over all atari games.
-* https://arxiv.org/abs/1806.09729 Quantum backprop. Gotta get in all those buzzwords.
-* http://www1.icsi.berkeley.edu/~shastri/psfiles/nc2000.pdf Hebbian + causal link dump
-* https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006227 Hebbian + causal link dump
-* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4006178/ Hebbian + causal link dump
-* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4563904/ Hebbian + causal link dump
-* https://www.vicarious.com/wp-content/uploads/2018/01/AAAI18-pixelworld.pdf Vicarious AAAI. Seems interesting
-* https://arxiv.org/pdf/1712.09913.pdf Cool paper on visualizing loss landscapes
-* https://arxiv.org/pdf/1803.10760.pdf Memory paper Mark suggested
-* https://arxiv.org/pdf/1603.01121.pdf Imperfect information self play. About modeling minds and nash eq.
-* https://www.cell.com/neuron/fulltext/S0896-6273(18)30543-9 neuroscience + RNNs dynamics
-* https://www.nature.com/articles/nn.3405 neuroscience + RNNs dynamics
-* https://www.biorxiv.org/content/early/2017/09/01/183632 neuroscience + RNNs dynamics
-* https://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00409?url_ver=Z39.88-2003&rfr_id=ori%3Arid%3Acrossref.org&rfr_dat=cr_pub%3Dpubmed neuroscience + RNNs dynamics
-* https://blog.openai.com/amplifying-ai-training/ Seems to be a form of imitation learning via breaking into smaller known tasks, and building an ensemble of known tasks by making the new one part of ensemble.
+* https://arxiv.org/abs/1901.11084 RL Analysis
+* https://arxiv.org/abs/1806.07366 Neural ordinal diff eq. Need to do for class anyways
