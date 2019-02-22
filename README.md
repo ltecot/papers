@@ -1,6 +1,12 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation](https://arxiv.org/pdf/1802.07228.pdf)
+
+A lengthy report on the many aspects of dangers of intelligent systems. Put together by Miles Brundage and many other authors from various institutions. Definitely recommend to read, especially if there are specific areas you're interested in you can just skip to them.
+
+Personally I think the best take-away from this article isn't neccisarily the extistential stuff with super-intelligent AI, because I think that's a generally understood argument. I think (at least from my current perspective) what is less understood is the impact of even modern-level agents. For instance, when Dr. Russell was doing his visiting lecture, he talked about how social media has been an example of this. The algorithms these websites put in place to increase the number of click-throughs seems like a pretty innocent and reasonable thing at first. But eventually it leads to forms of addiction, polarization on the political spectrums, proliferation of false news, etc. (in theory, I'd want to see a study if I were to make definitive claims). There are numerous examples of more near-term concerns similar to this.
+
 ### [The Off-Switch Game](https://arxiv.org/abs/1611.08219)
 
 I came across this paper because of a talk Dr. Russell gave at UCLA the other day. It made me think of alignment more as a property that should be heavily ingrained in the way we design agents, rather than a tack-on to a reward function. This paper was an example he used, specifically in how acting on the percieved desires of a human, and being uncertain about said desires, actually gives incentive for a theoretical artificial agent to allow itself to be turned off. (Whereas if it operates off pure reward, even if being turned off isn't explicitly labelled as bad, it can be interpreted as bad because being turned off means it can't gain any more reward.)
