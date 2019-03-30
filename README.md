@@ -1,6 +1,14 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+
+
+### [Implicit Generation and Generalization in Energy-Based Models](https://openai.com/blog/energy-based-models/)
+
+OpenAI blog and paper about energy based models. It is essentially the same process as equilibrium propagation, though I think this is generally true for all energy models. Basically you give an input, minimize the energy from that initial state with respect to the input, then update the weight parameters by contrasting the produced input with the ground truth input. The difference here is that the energy function is the network itself, instead of something we directly define. Interesting stuff, they do a lot of expiriments to show it doing different things. Because defining it as an energy function makes it sort-of flexible they can do things like generate samples and such.
+
+I haven't really done a lot of stuff with these types of models but I think you could do the same type of thing with just regular networks. For example, for the generative stuff you'd just have to define a loss that maximizes your desired output, then do gradient descent with respect to the inputs. I am sort of curious though what affects this training procedure has versus doing just plain squared error loss training. They mention some stuff about it having better adversarial robustness, which I could see being true given that the training procedure essentially trains against self-generated counterexamples. Though I'm not really familiar enough with the topic to say if that's actually a procedure that works with current neural networks.
+
 ### [The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation](https://arxiv.org/pdf/1802.07228.pdf)
 
 A lengthy report on the many aspects of dangers of intelligent systems. Put together by Miles Brundage and many other authors from various institutions. Definitely recommend to read, especially if there are specific areas you're interested in you can just skip to them.
