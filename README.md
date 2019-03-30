@@ -1,13 +1,17 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [Learning Logistic Circuits](https://arxiv.org/abs/1902.10798)
 
+Basically about combining symbolic AI with more modern approaches. Take what I say with a grain of salt cause I mostly skimmed it, but it seems that essentially they create circuits that encode some sort of symbolic knowledge about the system. You can give each input a certain probability and then compute the probability of the output at each gate, which they call the "circuit flow". Then they define a weight function with parameters that are tied to the "circuit flow", and you can learn these parameters via normal gradient descent. Pretty neat, not something I really thought of before, but the more I think about it it's kinda what people have been doing all along on a more abstract level. We choose different network structures for different jobs because we know the data tends to follow certain patterns. This is just a much more formal way of doing that via symbolic logic.
 
 ### [Implicit Generation and Generalization in Energy-Based Models](https://openai.com/blog/energy-based-models/)
 
 OpenAI blog and paper about energy based models. It is essentially the same process as equilibrium propagation, though I think this is generally true for all energy models. Basically you give an input, minimize the energy from that initial state with respect to the input, then update the weight parameters by contrasting the produced input with the ground truth input. The difference here is that the energy function is the network itself, instead of something we directly define. Interesting stuff, they do a lot of expiriments to show it doing different things. Because defining it as an energy function makes it sort-of flexible they can do things like generate samples and such.
 
 I haven't really done a lot of stuff with these types of models but I think you could do the same type of thing with just regular networks. For example, for the generative stuff you'd just have to define a loss that maximizes your desired output, then do gradient descent with respect to the inputs. I am sort of curious though what affects this training procedure has versus doing just plain squared error loss training. They mention some stuff about it having better adversarial robustness, which I could see being true given that the training procedure essentially trains against self-generated counterexamples. Though I'm not really familiar enough with the topic to say if that's actually a procedure that works with current neural networks.
+
+To those confused as to how this type of process of sampling can approximate the entire energy landscape, the intuition is pretty well explained by [Hinton's paper](https://onlinelibrary.wiley.com/doi/epdf/10.1207/s15516709cog0000_76) that they cite. Basically if you do a walk to minimize energy, in theory the vector with the minimal energy will dominate the landscape. So if you keep sampling via minimzing energy you should be sampling roughly proportional to what you would get by just pulling it directly from the probability distribution.
 
 ### [The Malicious Use of Artificial Intelligence: Forecasting, Prevention, and Mitigation](https://arxiv.org/pdf/1802.07228.pdf)
 
