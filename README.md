@@ -1,6 +1,10 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [Qubit Allocation for Noisy Intermediate-Scale Quantum Computers](https://arxiv.org/abs/1810.08291)
+
+Paper about quantum algorithm compiling. Basically it's a standard constraint satisfaction problem where you have to assign logical qubits in the algorithm to qubits on your specific machine's architecture, while minimizing the number of swaps that have to be performed to conform to the qubit's connectivity. They use standard search algorithms and simulated annealing.
+
 ### [Learning Logistic Circuits](https://arxiv.org/abs/1902.10798)
 
 Basically about combining symbolic AI with more modern approaches. Take what I say with a grain of salt cause I mostly skimmed it, but it seems that essentially they create circuits that encode some sort of symbolic knowledge about the system. You can give each input a certain probability and then compute the probability of the output at each gate, which they call the "circuit flow". Then they define a weight function with parameters that are tied to the "circuit flow", and you can learn these parameters via normal gradient descent. Pretty neat, not something I really thought of before, but the more I think about it it's kinda what people have been doing all along on a more abstract level. We choose different network structures for different jobs because we know the data tends to follow certain patterns. This is just a much more formal way of doing that via symbolic logic.
