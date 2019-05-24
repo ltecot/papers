@@ -1,6 +1,10 @@
 # Papers
 Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 
+### [TensorNetwork: A Library for Physics and Machine Learning](https://arxiv.org/abs/1905.01330)
+
+Essentially documentation on Google's tensor network's library.
+
 ### [Qubit Allocation for Noisy Intermediate-Scale Quantum Computers](https://arxiv.org/abs/1810.08291)
 
 Paper about quantum algorithm compiling. Basically it's a standard constraint satisfaction problem where you have to assign logical qubits in the algorithm to qubits on your specific machine's architecture, while minimizing the number of swaps that have to be performed to conform to the qubit's connectivity. They use standard search algorithms and simulated annealing.
