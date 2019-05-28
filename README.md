@@ -1,5 +1,6 @@
 # Papers
-Notes and summaries of papers for myself. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
+Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
+"Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
 ### [TensorNetwork: A Library for Physics and Machine Learning](https://arxiv.org/abs/1905.01330)
 
