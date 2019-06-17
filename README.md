@@ -2,6 +2,13 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+
+### [Machine learning quantum states in the NISQ era](https://arxiv.org/abs/1905.04312)
+
+An overview paper of how machine learning is being used to learn quantum states. Essentially they take a bunch of measurments and then create a generative model that learns to draw measurments the same way the underlying state does. They mostly use Boltzmann machines, and I've been told that they mainly do that because they work decently well and physicists like them (though other generative models would work fine too presumably).
+
+I like this sort of stuff because it's sort-of the empirical side of what's the boundary between classical and quantum models of computation. I'm curious about how that boundary applies to learning different operations on quantum states.
+
 ### [TensorNetwork: A Library for Physics and Machine Learning](https://arxiv.org/abs/1905.01330)
 
 Essentially documentation on Google's tensor network's library.
