@@ -2,6 +2,10 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Quantum Machine Learning Algorithms: Read the Fine Print](https://scottaaronson.com/papers/qml.pdf)
+
+Overview by Scott Aaronson about the caveates that come with different quantum learning algorithms. There are two things he covers. Firstly, a lot of the proposed algorithms require very specific properties to give speedups over classical ones. And secondly, a lot of them assume that we are given a specific input superposition. So in order for these speedups to still apply, it has to be at least equally hard to create the information classically as it is to put the information into a specific superposition (which apparently typically means a relatively uniform state). He also talks a lot about the HHL algorithm, which I believe is the algorithm that Ewin Tang found a classical counterpart for with comprable complexity.
+
 ### [Integrating Neural Networks with a Quantum Simulator for State Reconstruction](https://arxiv.org/abs/1904.08441)
 
 Similar to the paper below, but a more high level summary.
