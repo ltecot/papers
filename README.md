@@ -2,6 +2,10 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [A Survey of Quantum Learning Theory](https://arxiv.org/abs/1701.06806)
+
+Pretty much what the title sounds like. They talk a little bit about different algorithms and the PAC learnability of a quantum state, but a lot of it is about learning the underlying function of a quantum oracle. Or at least I think, a lot of it is too over my head and I only skimmed so I'm not totally certain. I'm not totally clear on what purpose this has other than an academic curiosity, though I do know some applications in quantum chemistry provide you with a quantum state? So maybe there are instances of that sort of data that this would be useful for? I'd need to learn more to say for sure.
+
 ### [Quantum Machine Learning Algorithms: Read the Fine Print](https://scottaaronson.com/papers/qml.pdf)
 
 Overview by Scott Aaronson about the caveates that come with different quantum learning algorithms. There are two things he covers. Firstly, a lot of the proposed algorithms require very specific properties to give speedups over classical ones. And secondly, a lot of them assume that we are given a specific input superposition. So in order for these speedups to still apply, it has to be at least equally hard to create the information classically as it is to put the information into a specific superposition (which apparently typically means a relatively uniform state). He also talks a lot about the HHL algorithm, which I believe is the algorithm that Ewin Tang found a classical counterpart for with comprable complexity.
