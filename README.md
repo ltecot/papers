@@ -2,6 +2,9 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Integrating Neural Networks with a Quantum Simulator for State Reconstruction](https://arxiv.org/abs/1904.08441)
+
+Similar to the paper below, but a more high level summary.
 
 ### [Machine learning quantum states in the NISQ era](https://arxiv.org/abs/1905.04312)
 
