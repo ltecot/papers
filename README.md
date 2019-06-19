@@ -2,6 +2,10 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Flow-based generative models for Markov chain Monte Carlo in lattice field theory](https://arxiv.org/abs/1904.12072)
+
+Essentially they speed up the process of obtaining path integrals in a lattice via Monte Carlo chains by using flow models. To be honest, as is common with these physics papers, a lot of the finer details are over my head. But it's neat to see flow models used for these things, intuitively flow models seemed well-posed to me to do more of these probability-distribution related quantum computations.
+
 ### [A Survey of Quantum Learning Theory](https://arxiv.org/abs/1701.06806)
 
 Pretty much what the title sounds like. They talk a little bit about different algorithms and the PAC learnability of a quantum state, but a lot of it is about learning the underlying function of a quantum oracle. Or at least I think, a lot of it is too over my head and I only skimmed so I'm not totally certain. I'm not totally clear on what purpose this has other than an academic curiosity, though I do know some applications in quantum chemistry provide you with a quantum state? So maybe there are instances of that sort of data that this would be useful for? I'd need to learn more to say for sure.
