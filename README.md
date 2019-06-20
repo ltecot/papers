@@ -2,6 +2,11 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+
+### [What physicists want to know about advances in generative modeling](https://machine19.github.io/machine19.github.io/Blogs/Albergo_GenModels/GenModels.html)
+
+Not a paper, but a good overview of generative models by Michael Albergo. I like it because it has relatively simple explinations of everything. Unfortunately the part specific to physics topics isn't written yet, but hopefully that'll come soon.
+
 ### [Flow-based generative models for Markov chain Monte Carlo in lattice field theory](https://arxiv.org/abs/1904.12072)
 
 Essentially they speed up the process of obtaining path integrals in a lattice via Monte Carlo chains by using flow models. To be honest, as is common with these physics papers, a lot of the finer details are over my head. But it's neat to see flow models used for these things, intuitively flow models seemed well-posed to me to do more of these probability-distribution related quantum computations.
