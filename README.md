@@ -3,6 +3,10 @@ Notes and summaries of papers. Not meant to be extremely accurate or thoughtful,
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
 
+### [Matrices as Tensor Network Diagrams](https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams)
+
+Very nice intuitive blog post about representing matricies as tensor networks.
+
 ### [What physicists want to know about advances in generative modeling](https://machine19.github.io/machine19.github.io/Blogs/Albergo_GenModels/GenModels.html)
 
 Not a paper, but a good overview of generative models by Michael Albergo. I like it because it has relatively simple explinations of everything. Unfortunately the part specific to physics topics isn't written yet, but hopefully that'll come soon.
