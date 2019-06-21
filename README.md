@@ -2,6 +2,22 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Adversarial Policies: Attacking Deep Reinforcement Learning](https://arxiv.org/abs/1905.10615)
+
+This is another paper I didn't actually read, but I ran into one of the authors at ICML and discussed it. Essentially train two agents in a two-player adversarial RL game, fix the policy of one agent, and then allow the other agent to search for adversarial examples by making small changes to their own policy at each time step.
+
+I supsect if I read the paper in full there's probably more interesting analysis, but at a surface level this seems like a sort of obvious thing. If you fix the policy of one agent, unless you've come close to solving the min-max game you'll for sure be able to beat that agent. Though I do like this paper a lot, because it poses a very real question: is there a way for us to provide some sort of robustness (or guarantee of robustness) for adversarial agents when our own policy is fixed? It's a pretty realistic scenario for self-driving cars and such.
+
+It seems like a pretty intractable problem in the unrestriced case, and I would guess that pretty much the best you could do there is just train more till nash equilibrium. But there are some assumptions we could make that might simplify it in a way that's still useful. For instance, we could instead just decompose this into a classification problem. Let's just assume there isn't an adversarial agent per say, and it's just someone tampering with the sensors or placing things in the enviroment that might cause failure. This would just decompose directly into standard adversarial guarantees and/or training, but instead of caring about classificaiton we care about action outputs. I'm not sure if that's neccisarily a useful study, because it's basically just copy and pasting research from one field to another. But presumably we'd care more about how these robustness guarantees translate to unseen states than we would in the classificaiton case, so maybe there'd be some interesting follow-ups there.
+
+Also, say we restrict the adversarial agent to only small changes for very specific actions. This could correlate to non-uniform robustness guarantees, where we train to certify robustness in certain dimensions but don't care as much about it in others. I'm not really sure how you'd formalize this in a useful manner, but might be interesting.
+
+The only other idea I'd have here is more of a game theory thing. Lets say we don't fix our own policy. Is there some way for us to best do defensive updates such that it's hard for the other agent to find these examples? To be honest I know zero about this field, honestly this might just be exactly the same as GAN training, I'm not sure it's really possible to do any better than just optimizing strictly for performance. But still, might be an interesting question to ask.
+
+### [Deep Neuroevolution: Genetic Algorithms are a Competitive Alternative for Training Deep Neural Networks for Reinforcement Learning](https://arxiv.org/pdf/1712.06567.pdf)
+
+This is another skim, I didn't read the full paper. But I wanted to put it up here just because I'm a fan of this gradient-free stuff, especially in context of RL. To my understanding the title basically says it all, they just try using genertic algorithms instead of evolution strategies like OpenAI did.
+
 ### [Backpropamine: Training Self-Modifying Neural Networks With Differentiable Neuromodulated Plasticity](https://openreview.net/pdf?id=r1lrAiA5Ym)
 
 Follow-up work from Uber on the differential-plasticity hebbian learning thing. I only skimmed it, but seems like they basically add other neurons in the network and/or a latent model that can "control" the amount that the hebbian value is passed through to the neurons. I was thinking something more along the lines of selectively preventing backprop on certain neurons and/or discouraging "far" neuron connections, though Jeff Clune talked about that stuff in his talk at ICML so I'm assuming those works are elsewhere?
