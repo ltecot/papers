@@ -2,6 +2,9 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Closed-Loop GAN for continual Learning](https://arxiv.org/abs/1811.01146)
+
+I didn't actually read the paper in full, but I talked with the first author when she presented her poster at ICML. Essentially it's just a study on how a combination of a replay buffer and a trained GAN can help combat catastrophic forgetting. The only work I'm familiar with in catastrophic forgetting is the hebbian learning stuff Uber did, so I'm not really educated enough to give insight into this, but this seems pretty cool.
 
 ### [Matrices as Tensor Network Diagrams](https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams)
 
