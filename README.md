@@ -2,9 +2,13 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Backpropamine: Training Self-Modifying Neural Networks With Differentiable Neuromodulated Plasticity](https://openreview.net/pdf?id=r1lrAiA5Ym)
+
+Follow-up work from Uber on the differential-plasticity hebbian learning thing. I only skimmed it, but seems like they basically add other neurons in the network and/or a latent model that can "control" the amount that the hebbian value is passed through to the neurons. I was thinking something more along the lines of selectively preventing backprop on certain neurons and/or discouraging "far" neuron connections, though Jeff Clune talked about that stuff in his talk at ICML so I'm assuming those works are elsewhere?
+
 ### [Closed-Loop GAN for continual Learning](https://arxiv.org/abs/1811.01146)
 
-I didn't actually read the paper in full, but I talked with the first author when she presented her poster at ICML. Essentially it's just a study on how a combination of a replay buffer and a trained GAN can help combat catastrophic forgetting. The only work I'm familiar with in catastrophic forgetting is the hebbian learning stuff Uber did, so I'm not really educated enough to give insight into this, but this seems pretty cool.
+I didn't actually read the paper in full, but I talked with the first author when she presented her poster at ICML. Essentially it's just a study on how a combination of a replay buffer and a trained GAN can help combat catastrophic forgetting. The only work I'm familiar with in catastrophic forgetting is the hebbian learning stuff Uber did, so I'm not really educated enough to give insight into this, but this seems pretty cool. I also really like their expiriment setup training MNIST for 0 and 1, then 2 and 3, etc. Very simple to understand and run on.
 
 ### [Matrices as Tensor Network Diagrams](https://www.math3ma.com/blog/matrices-as-tensor-network-diagrams)
 
