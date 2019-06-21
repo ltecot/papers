@@ -2,6 +2,16 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Model Based Planning with Energy-Based Models](https://drive.google.com/file/d/1XGYtcw4mX8zFwJmjkMPzJxbiIQm7Y5yV/view)
+
+Energy based models for RL. I actually have a report where I tried stuff like this, though it didn't work nearly as well. To be honest what they exactly do isn't totally clear to me. But it seems like they do a more sophisticated version of what I did, which is essentially lowering the energy of the landscape while raising the energy of state transitions proportional to the reward they give you. I had all sorts of divergence and collapse issues when doing this, but presumably they've seemed to get it to work at least decently well.
+
+### [Implicit Generation and Modeling with Energy-Based Models](https://arxiv.org/pdf/1903.08689.pdf)
+
+I think I may have put this up here before, or a blog post link to it. But I like energy models so it's here anyways. Essentially you just have whatever model you want represent an energy function, and to get an output you minimize energy given an input. Then you just need to modify the weights to raise the energy of the examples you generate, and lower the energy of real examples. The specifics depend on exactly what type of model you want, and they have a lot of specific details here to get it to work well, but that's the gist.
+
+They make a party platter of claims in this paper. I'm not really knowledgable enough to make any comments on them, with the exception of the robustness claims, which aren't particularly convincing to me. But irregardless still cool work to see.
+
 ### [Adversarial Policies: Attacking Deep Reinforcement Learning](https://arxiv.org/abs/1905.10615)
 
 This is another paper I didn't actually read, but I ran into one of the authors at ICML and discussed it. Essentially train two agents in a two-player adversarial RL game, fix the policy of one agent, and then allow the other agent to search for adversarial examples by making small changes to their own policy at each time step.
