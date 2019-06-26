@@ -2,6 +2,10 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Expressibility and entangling capability of parameterized quantum circuits for hybrid quantum-classical algorithms](https://scirate.com/arxiv/1905.10876)
+
+Essentially they just define metrics and do expiriments on the expressibility of different quantum circuits, meaning how many different states can they reach if you tune the parameters of the circuit. They also look at the level of enanglment you can achieve (in practice these metrics have precise definitions).
+
 ### [Adversarial Examples Are Not Bugs, They Are Features](https://arxiv.org/abs/1905.02175)
 
 Very interesting paper that makes some empirical claims on adversarial examples. Essentially they run expiriments to show that models can generalize to noise that humans can't see, but are general features in the data itself. They do this through a few expiriments where they remove non-robust features from a dataset which makes the model robust with no extra tricks, and they show that models can perform well when only given these imperceptible features to work with (I didn't read the paper in detail so take what I saw with a grain of salt). Essentially the gist of what they are trying to argue is that adversarial examples are a result of features that humans can't precieve, but are there in a dataset.
