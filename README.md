@@ -2,6 +2,10 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Towards Quantum Machine Learning with Tensor Networks](https://arxiv.org/pdf/1803.11537.pdf)
+
+An overview of a method to do machine learning via quantum circuits (which can be equivalently represented with tensor networks). I got a little lost in some of the lingo but the general idea seems to be define a circuit with parameterized unitary gates, then optimize those gates via a numerical gradient (I think that's the right term, basically just try wiggling the parameters either way and go the better direction). 
+
 ### [A Quantum Approximate Optimization Algorithm for continuous problems](https://arxiv.org/abs/1902.00409)
 
 Essentially just describing how to do optimization in a quantum algorithm. This is mainly an extension of Grover's algorithm, where you define an Hamiltonian that minimizes a defined cost function and evolve according to that (it's more involved than that but that's the TLDR). And then you can define other components to the cost to add in constraints, the same way you would do a Lagrangian in a regular machine learning method.
