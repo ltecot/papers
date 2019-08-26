@@ -2,6 +2,10 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [The Learnability of Quantum States](https://www.scottaaronson.com/papers/occamprs.pdf)
+
+Provides PAC bounds for learning quantum states. I only skimmed the proof but they basically seem to just apply a quantum mechanics hypothesis class to fat-shattering and concentration inequalities. Though the most interesting thing is they instead only bound the probability that the constructed quantum state will be close when it's measured in some dataset of specific measurments. (They say that previous work didn't allow this relaxation, and were only able to get an exponential sample size requirment, whereas they can get polynomial.)
+
 ### [Towards Quantum Machine Learning with Tensor Networks](https://arxiv.org/pdf/1803.11537.pdf)
 
 An overview of a method to do machine learning via quantum circuits (which can be equivalently represented with tensor networks). I got a little lost in some of the lingo but the general idea seems to be define a circuit with parameterized unitary gates, then optimize those gates via a numerical gradient (I think that's the right term, basically just try wiggling the parameters either way and go the better direction). 
