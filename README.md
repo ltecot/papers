@@ -2,9 +2,16 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+
+### [Vulnerability of quantum classification to adversarial perturbations](https://arxiv.org/pdf/1905.04286.pdf)
+
+Some theorems about how adversarial robustness goes down as dimensonality increases in quantum information. I only really skimmed the theorems, but this seems sort of like an obvious thing. We see this happen too with classical machine learning. Interesting read, although at least from my current perspective doesn't seem like a particularly practical result.
+
 ### [The Learnability of Quantum States](https://www.scottaaronson.com/papers/occamprs.pdf)
 
 Provides PAC bounds for learning quantum states. I only skimmed the proof but they basically seem to just apply a quantum mechanics hypothesis class to fat-shattering and concentration inequalities. Though the most interesting thing is they instead only bound the probability that the constructed quantum state will be close when it's measured in some dataset of specific measurments. (They say that previous work didn't allow this relaxation, and were only able to get an exponential sample size requirment, whereas they can get polynomial.)
+
+Also, follow up work found [here](https://arxiv.org/pdf/1802.09025.pdf). I only skimmed it but basically seems to extend this into a regret-minimzation thing, where instead you're learning measurment after measurment and are just trying to minimize the amount you're incorrect over all measurments.
 
 ### [Towards Quantum Machine Learning with Tensor Networks](https://arxiv.org/pdf/1803.11537.pdf)
 
