@@ -2,6 +2,9 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Certified Adversarial Robustness via Randomized Smoothing](https://arxiv.org/abs/1902.02918)
+
+Basically we instead cerify robustness for a classifier that predicts the most likely output if we add gaussian noise to our base classifier. Although we have to approximate that smoothed classifier, so we can't certify with complete certainty, you can generally get better bounds with very high probability. I like this a lot, especially because it allows you to do away with all the linear programming nastiness of the formal verification procedures I'm used to (the cerification process is model-agnostic).
 
 ### [Vulnerability of quantum classification to adversarial perturbations](https://arxiv.org/pdf/1905.04286.pdf)
 
