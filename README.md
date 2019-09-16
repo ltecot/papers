@@ -2,6 +2,12 @@
 Notes and summaries of papers. Not meant to be extremely accurate or thoughtful, so take it with a grain of salt. And along those lines, if you see something that is wrong, please open an issue or pull request!
 "Reports" folder contains some of my work, mostly from independent research courses or other stuff that I want to archive but can't neccisarily be published.
 
+### [Learning Symbolic Physics with Graph Networks](https://arxiv.org/abs/1909.05862)
+
+Neat paper about learning physical laws (many-body gravity in this case) via graph neural networks. Seems that they basically create a structure where multi-layer perceptrons can operate on node pairs and update them per timestep. Then they use some previous work to try out algebraic equations that can approximate each MLP with minimal terms and error.
+
+Seems cool, but I'd be interested in pushing this to its limits. What happens when it's a very complex equation, or if there's more complex interactions? Would be interesting to see if there's a sort of regret-minimizer equation finder in a setting where expirimental data is constantly fed in.
+
 ### [Certified Adversarial Robustness via Randomized Smoothing](https://arxiv.org/abs/1902.02918)
 
 Basically we instead cerify robustness for a classifier that predicts the most likely output if we add gaussian noise to our base classifier. Although we have to approximate that smoothed classifier, so we can't certify with complete certainty, you can generally get better bounds with very high probability. I like this a lot, especially because it allows you to do away with all the linear programming nastiness of the formal verification procedures I'm used to (the cerification process is model-agnostic).
